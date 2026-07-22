@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f3ef">
+  <meta name="description" content="B&P Ilusalong payment details and review link">
+  <title>B&P Ilusalong</title>
+
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <div class="language-switcher" role="group" aria-label="Language">
+      <button class="language-button active" type="button" data-language="en" aria-pressed="true">EN</button>
+      <span aria-hidden="true">·</span>
+      <button class="language-button" type="button" data-language="ru" aria-pressed="false">RU</button>
+      <span aria-hidden="true">·</span>
+      <button class="language-button" type="button" data-language="et" aria-pressed="false">ET</button>
+    </div>
+
+    <section class="content" aria-labelledby="page-title">
+      <img class="logo" src="logo.png" alt="B&P Ilusalong">
+
+      <h1 id="page-title" class="visually-hidden">B&P Ilusalong</h1>
+      <p class="intro" data-i18n="intro">Payment details</p>
+
+      <div class="actions">
+        <button class="action-button" type="button" data-copy="iban">
+          <span class="button-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 7V5.8C8 4.81 8.81 4 9.8 4h7.4c.99 0 1.8.81 1.8 1.8v9.4c0 .99-.81 1.8-1.8 1.8H16"/><rect x="5" y="7" width="11" height="13" rx="1.8"/></svg>
+          </span>
+          <span data-i18n="copyIban">Copy IBAN</span>
+        </button>
+
+        <button class="action-button" type="button" data-copy="company">
+          <span class="button-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 7V5.8C8 4.81 8.81 4 9.8 4h7.4c.99 0 1.8.81 1.8 1.8v9.4c0 .99-.81 1.8-1.8 1.8H16"/><rect x="5" y="7" width="11" height="13" rx="1.8"/></svg>
+          </span>
+          <span data-i18n="copyCompany">Copy company name</span>
+        </button>
+
+        <a class="action-button review-button" href="https://share.google/mMH946lIv997Xhiyy" target="_blank" rel="noopener noreferrer">
+          <span class="button-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.47 6.04.88-4.37 4.26 1.03 6.02L12 16.79l-5.4 2.84 1.03-6.02-4.37-4.26 6.04-.88L12 3Z"/></svg>
+          </span>
+          <span data-i18n="review">Leave a review</span>
+        </a>
+      </div>
+
+      <p class="privacy-note" data-i18n="privacy">Nothing is stored or sent.</p>
+    </section>
+  </main>
+
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true">
+    <span class="toast-check" aria-hidden="true">✓</span>
+    <span class="toast-text"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
